@@ -1,4 +1,6 @@
 # bldcol
+
+TESTING
 Blend Images is a collection of approximately 100k photographs covering a range of subjects, shot by hundreds of photographers based around the world. Using one directory of all of the images and one CSV of metadata, I will use Python to identify specific subjects within the collection through identification of text attributes in the captions and keywords, and then separate these files into separate sub-collections. The geographic locations of these sub-collections will be visualized using Tableau to further explore and understand the range of assets in the Blend collection.
 
 Project steps (using Python):
