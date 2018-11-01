@@ -30,14 +30,18 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         #print(tourismpics_meta)
 
 
-        with open ('filenames.BLtouristloc.csv', 'w') as csvfile:
+with open ('filenames.BLtouristattr.csv', 'w') as csvfile:
 
 
-            headers = ['Filename', 'Location']
-            writer = csv.writer(csvfile)
+    headers = ['Filename', 'Location']
+    writer = csv.writer(csvfile)
 
-            writer.writerow(headers)
+    writer.writerow(headers)
+    filename = row[0]
+    image_loc = row[7]
 
-            for tourismpics_meta in tourismpics:
-                tourismpics_meta = filename, image_loc
-                writer.writerow(tourismpics_meta)
+    tourismpics_meta = filename, image_loc
+    
+    for tourismpics_meta in tourismpics:
+        #tourismpics_meta = filename, image_loc
+        writer.writerow(tourismpics_meta)

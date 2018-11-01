@@ -20,10 +20,10 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 
     print(len(beachpics))
 
-for row in beachpics:     #for full rows of metadata
-    filename = row[0]
-    image_loc = row[7]
-    beachpics_meta = filename, image_loc
+    for row in beachpics:     #for full rows of metadata
+        filename = row[0]
+        image_loc = row[7]
+        beachpics_meta = filename, image_loc
 
     #print(beachpics_meta)
         #for beachpics_meta in beachpics:
