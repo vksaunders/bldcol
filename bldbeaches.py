@@ -20,19 +20,20 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 
     print(len(beachpics))
 
-    for row in beachpics:     #for full rows of metadata
-        filename = row[0]
-        image_loc = row[7]
-        beachpics_meta = filename, image_loc
+for row in beachpics:     #for full rows of metadata
+    filename = row[0]
+    image_loc = row[7]
+    beachpics_meta = filename, image_loc
 
-        #print(beachpics_meta)
+    #print(beachpics_meta)
         #for beachpics_meta in beachpics:
         #    writer.writerow(beachpics_meta)
 
-
-
+with open ('filenames.BLbeaches.csv', 'w') as csvfile:
     headers = ['Filename', 'Location']
-    with open ('filenames.BLbeachpics.csv', 'w') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(headers)
-        writer.writerow(beachpics_meta)
+    writer = csv.writer(csvfile)
+    writer.writerow(headers)
+
+        #    for beachpics_meta in beachpics:
+        #        beachpics_meta = filename, image_loc
+    writer.writerow(beachpics_meta)

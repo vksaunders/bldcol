@@ -29,14 +29,15 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         tourismpics_meta = filename, image_loc
         #print(tourismpics_meta)
 
-for tourismpics_meta in tourismpics:
-    headers = ['Filename', 'Location']
-    with open ('tourismpics.csv', 'w') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(headers)
-        writer.writerow(tourismpics_meta)
 
-#headers = ['Filename', 'Location']
-#with open ('tourismpics.csv', 'w') as csvfile:
-#    writer = csv.writer(csvfile)
-#    writer.writerow(headers)
+        with open ('filenames.BLtouristloc.csv', 'w') as csvfile:
+
+
+            headers = ['Filename', 'Location']
+            writer = csv.writer(csvfile)
+
+            writer.writerow(headers)
+
+            for tourismpics_meta in tourismpics:
+                tourismpics_meta = filename, image_loc
+                writer.writerow(tourismpics_meta)
