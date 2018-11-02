@@ -34,6 +34,6 @@ with open ('filenames.BLbeaches.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(headers)
 
-        #    for beachpics_meta in beachpics:
+            #for beachpics_meta in beachpics:
         #        beachpics_meta = filename, image_loc
     writer.writerow(beachpics_meta)
