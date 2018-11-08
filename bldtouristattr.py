@@ -1,6 +1,6 @@
-import re
 
 import csv
+
 with open ('RF_Contributor_Metadata.csv','r') as f:
     reader = csv.reader(f)
 
