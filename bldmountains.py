@@ -3,18 +3,18 @@ import csv
 with open ('RF_Contributor_Metadata.csv','r') as f:
     reader = csv.reader(f)
 
-    parkspics = []
+    mountainpics = []
     for row in reader:
         next(reader, None)  #Need this to get past header row
         caption1 = row[9]
         keyword1 = row[10]
 
 
-        if 'park' in str(keyword1) and 'beauty in nature' in str(keyword1):
+        if 'mountain' in str(keyword1) and 'landscape' in str(keyword1):
             filename = row[0]
             image_loc = row[7]
             file_and_loc = [filename, image_loc]
-            parkspics.append(file_and_loc)
+            mountainpics.append(file_and_loc)
 
 
 #Use this to write all rows of metadata for selected condition
@@ -22,10 +22,10 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         #
         #     tourismpics.append(tourismpics)
 
-    print(len(parkspics))
-    #print(parkspics)
+    print(len(mountainpics))
+    #print(mountainpics)
 
-with open ('filenames.BLparkspics.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
+with open ('filenames.BLmountainpics.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
 
     #headers = ['Filename', 'Photographer', 'Digital', 'Color','H/V', 'Date', 'Location', 'Release', 'Caption', 'Keywords', 'Photograph', 'Origin']
     headers = ['Filename', 'Location']
@@ -34,6 +34,6 @@ with open ('filenames.BLparkspics.csv', 'w', newline='') as csvfile:  #newline e
 
     writer.writerow(headers)
 
-    for parkspics_meta in parkspics:
+    for mountainpics_meta in mountainpics:
 
-        writer.writerow(parkspics_meta)
+        writer.writerow(mountainpics_meta)

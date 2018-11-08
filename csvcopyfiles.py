@@ -4,7 +4,7 @@ import csv
 
 
 
-with open ('filenames.BLtouristattr.csv','r') as f:
+with open ('filenames.BLforestpics.csv','r') as f:
     reader = csv.reader(f)
     next(reader, None)
 
@@ -14,7 +14,7 @@ with open ('filenames.BLtouristattr.csv','r') as f:
         valid_files = row[0]+'.jpg'
 
         full_name = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\bldthumbs\\" + valid_files
-        full_name_dest = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\tourismpics\\" + valid_files
+        full_name_dest = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\forestpics\\" + valid_files
 
         try:
             shutil.copy(full_name, full_name_dest)
@@ -23,7 +23,7 @@ with open ('filenames.BLtouristattr.csv','r') as f:
 
         except FileNotFoundError as fnf_error:
             print(fnf_error)
-            continue
+            #continue
 
 # except FileNotFoundError as fnf_error:
 #     print(fnf_error)

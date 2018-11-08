@@ -11,29 +11,28 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         keyword1 = row[10]
 
 
-        if 'beach' in str(caption1) and 'sand' in str(keyword1) and 'coast' in str(keyword1):
-
-            beachpics.append(row)
+        if 'beach' in str(caption1) and 'sand' in str(keyword1):
+            filename = row[0]
+            image_loc = row[7]
+            file_and_loc = filename, image_loc
+            beachpics.append(file_and_loc)
+            # beachpics.append(row)
 
             #print(row[0], 'beach image'), "/n"   #for filenames only
 
-
     print(len(beachpics))
+    #print(beachpics)
 
-    for row in beachpics:     #for full rows of metadata
-        filename = row[0]
-        image_loc = row[7]
-        beachpics_meta = filename, image_loc
 
-    #print(beachpics_meta)
-        #for beachpics_meta in beachpics:
-        #    writer.writerow(beachpics_meta)
+with open ('filenames.BLbeachpics.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
 
-with open ('filenames.BLbeaches.csv', 'w') as csvfile:
+    #headers = ['Filename', 'Photographer', 'Digital', 'Color','H/V', 'Date', 'Location', 'Release', 'Caption', 'Keywords', 'Photograph', 'Origin']
     headers = ['Filename', 'Location']
     writer = csv.writer(csvfile)
+
+
     writer.writerow(headers)
 
-            #for beachpics_meta in beachpics:
-        #        beachpics_meta = filename, image_loc
-    writer.writerow(beachpics_meta)
+    for beachpics_meta in beachpics:
+
+        writer.writerow(beachpics_meta)
