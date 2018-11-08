@@ -12,56 +12,29 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 
 
         if 'tourist attraction' in str(keyword1):
+            filename = row[0]
+            image_loc = row[7]
+            file_and_loc = [filename, image_loc]
+            tourismpics.append(file_and_loc)
 
-            tourismpics.append(row)
 
-            #print(row[0], 'beach image'), "/n"   #for filenames only
-
+#Use this to write all rows of metadata for selected condition
+        # if 'tourist attraction' in str(keyword1):
+        #
+        #     tourismpics.append(tourismpics)
 
     print(len(tourismpics))
 
 
-    for row in tourismpics:     #for full rows of metadata
-        filename = row[0]
-        image_loc = row[7]
-
-        tourismpics_meta = filename, image_loc
-        #print(tourismpics_meta)
-
-
 with open ('filenames.BLtouristattr.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
 
-    headers = ['Filename', 'Photographer', 'Digital', 'Color','H/V', 'Date', 'Location', 'Release', 'Caption', 'Keywords', 'Photograph', 'Origin']
+    #headers = ['Filename', 'Photographer', 'Digital', 'Color','H/V', 'Date', 'Location', 'Release', 'Caption', 'Keywords', 'Photograph', 'Origin']
+    headers = ['Filename', 'Location']
     writer = csv.writer(csvfile)
-    # filename = row[0]
-    # image_loc = row[7]
+
 
     writer.writerow(headers)
 
-
     for tourismpics_meta in tourismpics:
-        #tourismpics_meta = filename, image_loc
-        writer.writerow(tourismpics_meta)
 
-# with open ('filenames.BLtouristattr.csv','r') as f:
-#     reader = csv.reader(f)
-#
-#     for row in reader:
-#         next(reader,None)
-#         filename = row[0]
-#         image_loc = row[7]
-#         tourism_list = filename, image_loc
-#
-# with open ('tourismlist.csv', 'w') as csvfile:
-#     writer = csv.writer(csvfile)
-#
-#     headers = ['Filename', 'Location']
-#
-#     writer.writerow(headers)
-#
-#     filename = row[0]
-#     image_loc = row[7]
-#     tourism_list = filename, image_loc
-#
-#     for toursim_list in tourismpics:
-#         writer.writerow(toursim_list)
+        writer.writerow(tourismpics_meta)
