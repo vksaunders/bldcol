@@ -1,6 +1,7 @@
 README
 
 The Blend Images Collection
+----------------------------
 
 Blend Images is a commercial stock photography collection. This project started with approximately 100,000 jpeg images in one directory and a csv of metadata for the pictures.
 
