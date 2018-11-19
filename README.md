@@ -28,7 +28,7 @@ Looking at the images in each collection gives an assessment of keyword accuracy
 
 Approximately 17% of images were identified for more than one of these collections.
 
-Geocoding latitude and longitude from location name strings was accomplished through the Google's Geocoding API.
+Geocoding latitude and longitude from location name strings was accomplished through Google's Geocoding API.
 
 A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. This CSV was used for one data visualization of combined collections location data. If the duplicates had been left in, the visualization would indicate more images were shot in some geographic locations than was actually the case. Some filenames were linked to multiple collections (ie landmarks and parks).
 
