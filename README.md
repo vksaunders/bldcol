@@ -2,16 +2,16 @@ README
 
 File list
 ------------
-Bldbeaches.py		Read master csv, find all filenames tagged w beach keywords, write new csv
-Bldcityscapes.py	Read master csv, find all filenames tagged w city keywords, write new csv
-Bldforests.py		Read master csv, find all filenames tagged w forest keywords, write new csv
-Bldlandmarks.py	Read master csv, find all filenames tagged w landmark keywords, write new csv
-Bldmountains.py	Read master csv, find all filenames tagged w mountain keywords, write new csv
-Bldparks.py		Read master csv, find all filenames tagged w park keywords, write new csv
-Combinecsv.py		Combine the csvs of these separate collections into one csv
-Csvcopyfiles.py		Copy jpg files from master directory to separate collection directories, w csv list
-Jpgscopy.py		Copy all jpgs from one directory into another
-Jpgsmove.py		Move all jpgs from one directory into another
+Bldbeaches.py	--	Read master csv, find all filenames tagged w beach keywords, write new csv /
+Bldcityscapes.py--Read master csv, find all filenames tagged w city keywords, write new csv /
+Bldforests.py	--Read master csv, find all filenames tagged w forest keywords, write new csv /
+Bldlandmarks.py--	Read master csv, find all filenames tagged w landmark keywords, write new csv /
+Bldmountains.py--	Read master csv, find all filenames tagged w mountain keywords, write new csv /
+Bldparks.py	--Read master csv, find all filenames tagged w park keywords, write new csv /
+Combinecsv.py	--Combine the csvs of these separate collections into one csv /
+Csvcopyfiles.py	--Copy jpg files from master directory to separate collection directories, w csv list /
+Jpgscopy.py	--Copy all jpgs from one directory into another /
+Jpgsmove.py	--Move all jpgs from one directory into another /
 
 The Project 
 -----------
