@@ -34,4 +34,4 @@ A Python script was written to combine all of the sub-collection CSVs and then e
 
 Visualizations were created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. And one visualization was created for the aggregate of these sub-collections.
 
-Viewing the separate directroies of images, combined with the Tableau visualizations of where the images were shot, gives us a much better understanding of what themes exist in the Blend Images catalogue.
+Viewing the separate directroies of images, combined with the Tableau visualizations of where the images were shot, gives us a better understanding of what themes exist in the Blend Images catalogue.
