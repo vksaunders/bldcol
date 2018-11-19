@@ -1,16 +1,31 @@
-# bldcol
+README
 
-TESTING
-Blend Images is a collection of approximately 100k photographs covering a range of subjects, shot by hundreds of photographers based around the world. Using one directory of all of the images and one CSV of metadata, I will use Python to identify specific subjects within the collection through identification of text attributes in the captions and keywords, and then separate these files into separate sub-collections. The geographic locations of these sub-collections will be visualized using Tableau to further explore and understand the range of assets in the Blend collection.
+File list
+------------
+Bldbeaches.py		Read master csv, find all filenames tagged w beach keywords, write new csv
+Bldcityscapes.py	Read master csv, find all filenames tagged w city keywords, write new csv
+Bldforests.py		Read master csv, find all filenames tagged w forest keywords, write new csv
+Bldlandmarks.py	Read master csv, find all filenames tagged w landmark keywords, write new csv
+Bldmountains.py	Read master csv, find all filenames tagged w mountain keywords, write new csv
+Bldparks.py		Read master csv, find all filenames tagged w park keywords, write new csv
+Combinecsv.py		Combine the csvs of these separate collections into one csv
+Csvcopyfiles.py		Copy jpg files from master directory to separate collection directories, w csv list
+Jpgscopy.py		Copy all jpgs from one directory into another
+Jpgsmove.py		Move all jpgs from one directory into another
 
-Project steps (using Python):
-- Search captions and keywords for themes with geographic implications (ie beaches, tourist attractions, travel destinations, mountain ranges), count the assets in potential collections to make sure the number of photos is meaningful for an actual sub-collection, examine how many distinct locations are represented in potential sub-collections
+The Project 
+-----------
+Blend Images is a commercial stock photography collection. This project started with approximately 100,000 jpeg images in one directory and a csv of metadata for the pictures.
 
-- Create separate CSVs of the metadata for these sub-collections
+Scripts were written using Python 3 to identify images for separate collections based on keywords with geographic attributes.
 
-- Physically move or copy the images into separate directories for visual understanding of how the images match up with location keywords and see what the collections look like
+The 6 collections selected are: beaches, cities, forests, landmarks, mountains, parks.
 
-Project Visualization (using Tableau):
--Use Google Developer geocoding tool to obtain long-lat data for images from string location names
+Csvs of metadata including the filename and image location were written for each collection.
 
--Global Map Visualization of separate image locations for each sub-collection, with option to turn different collections on-off to understand the breadth of each sub-collection, as well as breadth of all of the geographic collections together.
+Using each csv, each collection’s images were copied into new separate directories. A try-except clause returns the filenames of any images that are not found in the master directory (csvcopyfiles.py)
+
+Looking at the images in each collection gives an assessment of keyword accuracy.
+
+Approximately 17% of images were identified for more than one of these collections.
+
