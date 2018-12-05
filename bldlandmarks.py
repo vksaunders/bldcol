@@ -10,7 +10,7 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         keyword1 = row[10]
 
 
-        if 'landmark' in str(keyword1):
+        if 'landmark' in str(keyword1) and 'historical place' in str(keyword1):
             filename = row[0]
             image_loc = row[7]
             file_and_loc = [filename, image_loc]
