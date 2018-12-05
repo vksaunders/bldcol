@@ -19,7 +19,7 @@ Scripts were written using Python 3 to identify images for separate sub-collecti
 
 The 6 collections selected are: beaches, cities, forests, landmarks, mountains, parks.
 
-A Python script would read the original metadata CSV, find specific keywords, and then write a new CSV with only those filenames and their locations. The script was adapted for each collection to isolate the specific image category.
+A Python script reads the original metadata CSV, locates any occurrence of specified keywords, and then writes a new CSV with only those filenames and their locations. The script was adapted for each collection to isolate the specific image category.
 
 The next phase of the project was writing a script to read each collection CSV, and then copy those image files from the master directory of jpegs to their own separate folders.
 
@@ -31,8 +31,8 @@ Approximately 17% of images were identified for more than one of these collectio
 
 Geocoding latitude and longitude from location name strings was accomplished through Google's Geocoding API.
 
-A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. This CSV was used for one data visualization of combined collections location data. If the duplicates had been left in, the visualization would indicate more images were shot in some geographic locations than was actually the case. Some filenames were linked to multiple collections (ie landmarks and parks).
+A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. This CSV was used for one data visualization of combined collections location data. Some filenames were identified for multiple collections (ie landmarks and parks).
 
 Visualizations were created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. And one visualization was created for the aggregate of these sub-collections.
 
-Viewing the separate directroies of images, combined with the Tableau visualizations of where the images were shot, gives us a better understanding of what themes exist in the Blend Images catalogue.
+
