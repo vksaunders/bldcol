@@ -27,12 +27,25 @@ A try-except clause returns the filenames of any images that are not found in th
 
 Looking at the images in each collection gives an assessment of keyword accuracy.
 
-Approximately 17% of images were identified for more than one of these collections.
+Open Refine was used to clean the locations data, which was originally in City, State, Country columns and had inaccuracies.
 
 Geocoding latitude and longitude from location name strings was accomplished through Google's Geocoding API.
 
 A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. This CSV was used for one data visualization of combined collections location data. Some filenames were identified for multiple collections (ie landmarks and parks).
 
 Additional deliverable for the project: Map visualization was created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. 
+
+Instructions
+--------------
+For reading CSVs and writing modified CSVs:
+The Python scripts must be in the same directory with the CSV of metadata. 
+
+For copying or moving jpegs:
+Create two directories: Source directory for all of the images and Destination directory where jpegs will be moved or copied. These directories should also be in the folder with the CSVs and Python files.
+
+In jpgscopy.py include the complete paths of source and destination directories in the script to place images in the new destination directory.
+
+
+
 
 
