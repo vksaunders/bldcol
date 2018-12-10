@@ -31,7 +31,7 @@ Open Refine was used to clean the locations data, which was originally in City, 
 
 Geocoding latitude and longitude from location name strings was accomplished through Google's Geocoding API.
 
-A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. This CSV was used for one data visualization of combined collections location data. Some filenames were identified for multiple collections (ie landmarks and parks).
+A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. 
 
 Additional deliverable for the project: Map visualization was created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. 
 
