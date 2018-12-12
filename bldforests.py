@@ -18,12 +18,12 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 
 
 #Use this to write all rows of metadata for selected condition
-        # if 'tourist attraction' in str(keyword1):
+        # if 'forest' in str(keyword1):
         #
         #     tourismpics.append(tourismpics)
 
     print(len(forestpics))
-    #print(mountainpics)
+    #print(forestpics)
 #
 with open ('filenames.BLforestpics.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
 
