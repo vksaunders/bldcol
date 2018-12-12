@@ -1,4 +1,4 @@
-
+#Write one CSV that has all filenames with no duplicates--to see total number of distinct files found
 
 import csv
 
