@@ -15,11 +15,11 @@ Using Tableau to visualize the geographic data allows us to better understand th
 The Project 
 -----------
 
-Scripts were written using Python 3 to identify images for separate sub-collections based on keywords in the original metadata with geographic attributes.
+Scripts were written using Python 3 to identify images for separate sub-collections based on keywords and captions in the original metadata with geographic attributes.
 
 The 6 collections selected are: beaches, cities, forests, landmarks, mountains, parks.
 
-A Python script reads the original metadata CSV, locates any occurrence of specified keywords, and then writes a new CSV with only those filenames and their locations. The script was adapted for each collection to isolate the specific image category.
+A Python script reads the original metadata CSV, locates any occurrence of specified keyword strings, and then writes a new CSV with only those filenames and their locations. The script was adapted for each collection to isolate the specific image category.
 
 The next phase of the project was writing a script to read each collection CSV, and then copy those image files from the master directory of jpegs to their own separate folders.
 
