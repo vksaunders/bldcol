@@ -18,9 +18,9 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 
 
 #Use this to write all rows of metadata for selected condition
-        # if 'tourist attraction' in str(keyword1):
+        # if 'mountain' in str(keyword1):
         #
-        #     tourismpics.append(tourismpics)
+        #     mountainpics.append(tourismpics)
 
     print(len(mountainpics))
     #print(mountainpics)
