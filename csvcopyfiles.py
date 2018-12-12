@@ -13,17 +13,17 @@ with open ('filenames.BLforestpics.csv','r') as f:
 
         valid_files = row[0]+'.jpg'
 
-        full_name = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\bldthumbs\\" + valid_files
+        full_name_src = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\bldthumbs\\" + valid_files
         full_name_dest = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\forestpics\\" + valid_files
 
         try:
-            shutil.copy(full_name, full_name_dest)
+            shutil.copy(full_name_src, full_name_dest)
 
          #print(valid_files)
 
         except FileNotFoundError as fnf_error:
             print(fnf_error)
-            #continue
+            continue
 
 # except FileNotFoundError as fnf_error:
 #     print(fnf_error)
