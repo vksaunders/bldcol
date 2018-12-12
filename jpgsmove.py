@@ -3,13 +3,23 @@ import shutil
 import csv
 
 
+with open ('filenames.BLparkspics.csv','r') as f:
+    reader = csv.reader(f)
+    next(reader, None)
 
-dir_src = ("\\Users\\Valerie\\Documents\\GitHub\\bldcol\\Sourcejpg")
-dir_dst = ("\\Users\\Valerie\\Documents\\GitHub\\bldcol\\Destjpg")
+    for row in reader:
+         #print(row)
 
+        valid_files = row[0]+'.jpg'
 
+        full_name_src = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\Sourcejpg" + valid_files
+        full_name_dest = "\\Users\\Valerie\\Documents\\GitHub\\bldcol\\Destjpg" + valid_files
 
-for f in os.listdir(dir_src):
-    src_file = os.path.join(dir_src, f)
-    dst_file = os.path.join(dir_dst, f)
-    shutil.move(src_file, dst_file)
+        try:
+            shutil.move(full_name_src, full_name_dest)
+
+         #print(valid_files)
+
+        except FileNotFoundError as fnf_error:
+            print(fnf_error)
+            continue
