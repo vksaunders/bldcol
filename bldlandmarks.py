@@ -23,7 +23,7 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
         #     tourismpics.append(tourismpics)
 
     print(len(landmarkpics))
-    #print(mountainpics)
+    #print(landmarkpics)
 #
 # with open ('filenames.BLlandmarkpics.csv', 'w', newline='') as csvfile:  #newline eliminates extra blank lines after each entry
 #
