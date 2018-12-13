@@ -27,7 +27,7 @@ A try-except clause returns the filenames of any images that are not found in th
 
 Looking at the images in each collection gives an assessment of keyword accuracy.
 
-Open Refine was used to clean the locations data, which was originally in City, State, Country columns and had inaccuracies.
+OpenRefine was used to clean the locations data, which was originally in City, State, Country columns and had inaccuracies.
 
 Geocoding latitude and longitude from location name strings was accomplished through Google's Geocoding API.
 
