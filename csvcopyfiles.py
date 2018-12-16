@@ -24,15 +24,3 @@ with open ('filenames.BLforestpics.csv','r') as f:
         except FileNotFoundError as fnf_error:
             print(fnf_error)
             continue
-
-# except FileNotFoundError as fnf_error:
-#     print(fnf_error)
-
-# dir_src = ("\\Users\\Valerie\\Documents\\GitHub\\bldcol\\bldthumbs")
-# dir_dst = ("\\Users\\Valerie\\Documents\\GitHub\\bldcol\\tourismpics")
-#
-# for f in os.listdir(dir_src):
-#     if f in valid_files:
-#         src_file = os.path.join(dir_src, f)
-#         dst_file = os.path.join(dir_dst, f)
-#         shutil.copy(src_file, dst_file)
