@@ -22,7 +22,6 @@ def get_google_results(address, api_key=None, return_full_response=False):
 	geocode_url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(address)
 	geocode_url = geocode_url + "&key={}".format(api_key)
 
-
 	results = requests.get(geocode_url)
 
 	results = results.json()
@@ -74,21 +73,4 @@ for address in addresses:
             logger.error("Skipping!")
             geocoded = True
 
-        # If we're over the API limit, backoff for a while and try again later.
-        # if geocode_result['status'] == 'OVER_QUERY_LIMIT':
-        #     logger.info("Hit Query Limit! Backing off for a bit.")
-        #     time.sleep(BACKOFF_TIME * 60) # sleep for 30 minutes
-        #     geocoded = False
-        # else:
-            # If we're ok with API use, save the results
-            # Note that the results might be empty / non-ok - log this
-            # if geocode_result['status'] != 'OK':
-            #     logger.warning("Error geocoding {}: {}".format(address, geocode_result['status']))
-            # logger.debug("Geocoded: {}: {}".format(address, geocode_result['status']))
-            # results.append(geocode_result)
-            # geocoded = True
-
-# All done
-#logger.info("Finished geocoding all addresses")
-# Write the full results to csv using the pandas library.
 pd.DataFrame(results).to_csv(output_filename, encoding='utf8')
