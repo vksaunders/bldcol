@@ -11,11 +11,13 @@ Python provides a strong tool for parsing the original data to see the categorie
 
 Using Tableau to visualize the geographic data allows us to better understand the breadth of the collection, and where specific topics were photographed.
 
+Please Note: The images for this project are protected by copyright and the metadata is proprietary. Therefore, these scripts may only be used as a template for analyzing other image collections or similar projects.
+
 
 The Project 
 -----------
 
-Scripts were written using Python 3 to identify images for separate sub-collections based on keywords and captions in the original metadata with geographic attributes.
+Scripts were written using Python 3 to identify images for separate sub-collections based on keywords and captions in the original CSV metadata with geographic attributes.
 
 The 6 collections selected are: beaches, cities, forests, landmarks, mountains, parks.
 
@@ -33,10 +35,12 @@ Geocoding latitude and longitude from location name strings was accomplished thr
 
 A Python script was written to combine all of the sub-collection CSVs and then eliminate any duplicate filenames and write out a CSV of unique filenames and locations. 
 
-Additional deliverable for the project: Map visualization was created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. 
+Additional deliverable for the project: A map visualization was created in Tableau for each collection, using size bubbles to indicate how many images were shot in each global location. 
 
 Instructions
 --------------
+Install Python 3 
+
 For reading CSVs and writing modified CSVs:
 The Python scripts must be in the same directory with the CSV of metadata. 
 
