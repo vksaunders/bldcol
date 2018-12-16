@@ -20,7 +20,7 @@ with open ('RF_Contributor_Metadata.csv','r') as f:
 #Use this to write all rows of metadata for selected condition
         # if 'forest' in str(keyword1):
         #
-        #     tourismpics.append(tourismpics)
+        #     forestpics.append(tourismpics)
 
     print(len(forestpics))
     #print(forestpics)
