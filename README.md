@@ -7,17 +7,17 @@ Blend Images is a commercial stock photography collection. This project started 
 
 The goal was to gain insights into where the pictures were shot and what subjects are covered.
 
-Python provides a strong tool for parsing the original data to see the categories of subjects and a method for copying the images into separate directories of collections for viewing. 
+Python provides a strong tool for parsing the original data to see the categories of subjects and a method for copying the images, based on their list of filenames, into separate directories of collections for viewing. 
 
 Using Tableau to visualize the geographic data allows us to better understand the breadth of the collection, and where specific topics were photographed.
 
-Please Note: The images for this project are protected by copyright and the metadata is proprietary. Therefore, these scripts may only be used as a template for analyzing other image collections or similar projects.
+Please Note: The images for this project are protected by copyright and the metadata is proprietary. Therefore, these scripts may only be used as a template for analyzing other image collections or similar projects. The jpegs and CSVs are not included in this repository.
 
 
 The Project 
 -----------
 
-Scripts were written using Python 3 to identify images for separate sub-collections based on keywords and captions in the original CSV metadata with geographic attributes.
+Using Python 3, scripts are written here to identify images with geographic attributes for separate sub-collections based on keywords and captions in an original CSV of metadata.
 
 The 6 collections selected are: beaches, cities, forests, landmarks, mountains, parks.
 
@@ -42,10 +42,10 @@ Instructions
 Install Python 3 
 
 For reading CSVs and writing modified CSVs:
-The Python scripts must be in the same directory with the CSV of metadata. 
+Run Python scripts from the same directory with the CSV of metadata. 
 
 For copying or moving jpegs:
-Create two directories: Source directory for all of the images and Destination directory where jpegs will be moved or copied. These directories should also be in the folder with the CSVs and Python files.
+Create two directories: Source directory for all of the images and Destination directory where jpegs will be moved or copied. These directories should be located in the folder with the CSVs and Python files.
 
 In jpgscopy.py include the complete paths of source and destination directories in the script to place images in the new destination directory.
 
