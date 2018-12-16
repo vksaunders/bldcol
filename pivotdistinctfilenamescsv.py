@@ -29,13 +29,3 @@ with open ('indivfilenames.csv', 'w', newline='') as csvfile:  #newline eliminat
     for all_filenames in filename:
 
         writer.writerow(all_filenames)
-
-
-# DataCaptured = csv.reader(DataFile, delimiter=',', skipinitialspace=True)
-#
-# Category, Year = [], []
-# for row in DataCaptured:
-#     if row[0] not in Year:
-#         Year.append(row[0])
-#     if row[1] not in Category:
-#         Category.append(row[1])
